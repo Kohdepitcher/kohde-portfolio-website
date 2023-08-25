@@ -9,24 +9,274 @@
   <meta name="author" content="Kohde Pitcher">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
   <link rel="stylesheet" href="styles/styles.css?v=1.0">
   <link rel="stylesheet" href="styles/collection-cards.css">
+  <link rel="stylesheet" href="styles/home-page.css">
+
+  <style>
+
+@media (min-width: 768px) {
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+
+    /* .navigationBar{
+      background-color: rgb(22, 22, 22);
+      overflow: hidden;
+      width: 100%;
+      z-index: 999;
+
+      font-weight: bold;
+      
+    } */
+
+    /* .navigationBar::after {
+
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1.5px;
+      background: rgb(245,7,108);
+      position: relative;
+
+      top: 0;
+      left: 0;
+
+    } */
+
+    /* .navigationBarWrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      height: 100%;
+      margin-bottom: 1em;;
+    } */
+
+    /* .spacer {
+      flex-grow: 2;
+    }
+
+    .navigationBar .leftSide {
+      color: #ffffff;
+      text-align: left;
+      flex-grow: 1;
+      flex-direction: row;
+      margin-top: 3em;
+    } */
+
+    /* .navigationBar .rightSide {
+      color: #ffffff;
+      text-align: right;
+      flex-grow: 1;
+      flex-direction: row;
+      margin-top: 3em;
+    } */
+
+    /* .navigationBar a {
+      height: 100%; 
+      text-decoration: none;
+      padding-top: 3em;
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-bottom: 1em;
+      position: relative;
+    } */
+
+    /* .navigationBar a:hover::after {
+
+      content: "";
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: rgb(245,7,108);
+      position: absolute;
+
+      top: 1;
+      left: 0;
+    } */
+
+    /* .navigationBar a:hover::before {
+
+      content: "";
+      display: block;
+      width: 100%;
+      height: 5px;
+      background: rgb(245,7,108);
+      position: absolute;
+
+      top: 0;
+      left: 0;
+    }
+
+    .navigationBar a:hover {
+      color: rgb(245,7,108);
+      background: rgba(245,7,110,0.2);
+      background: linear-gradient(180deg, rgba(245,7,110,0.2) 40%, rgba(255,255,255,1) 40%); 
+    } */
+
+    /* 
+
+            <!-- <div class="section header-section">
+          
+          <div style="color: white;" class="wrapper">
+
+          <div class="header-section-container">
+
+            
+
+              <div class="left-side">
+                <h1 style="font-size: 56px; margin-bottom: 16px;">Hello, my name is Kohde 👋</h1>
+                <hp style="font-size: 24px;">I'm an passionate indie developer coding my ideas. Scroll down to see what I've been doing in my free time</p>
+              </div>
+              
+              <div class="right-side">
+                <img src="images/kohde-pitcher.jpeg" class="" style="width: 100%;">
+              </div>
+            
+
+            </div>
+
+          </div>
+
+      
+        </div> -->
+
+      <div class="navigationBar">
+
+    <div class="wrapper" style="padding: 0px;">
+
+      <div class="navigationBarWrapper">
+
+        <!-- Left Side -->
+        <div class="leftSide">
+          <a href="https://www.kohdepitcher.com">Kohde Pitcher</a>
+        </div>
+
+        <div class="spacer"></div>
+
+        <!-- Right Side -->
+        <div class="rightSide">
+          <a>Resume</a>
+          <a>Contact Me</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+    
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="transform: translateX(-50%); margin-left: 50%; position: absolute;">
+        <!-- <img src="images/kohde-pitcher-small.jpg" alt="Logo" width="24" height="24" class="d-inline-block align-text-top rounded-circle"> -->
+        <h1>Kohde Pitcher</h1>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!-- <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link ms-auto" href="#">Pricing</a>
+        </div> -->
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Course</a>
+          </li>			
+        </ul>	
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Course</a>
+          </li>			
+          </ul>		
+
+
+      </div>
+
+    </div>
+  </nav>
+    
+    */
+
+  </style>
 
 </head>
 
 <body>
 
-    <div class="wrapper">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(22, 22, 22)">
+    <div class="container-fluid">
+        <a class="navbar-brand abs" href="#"><h2>Kohde Pitcher</h2></a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapseNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/resume.html">Resume</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <button type="button" class="btn nav-link" onclick="document.querySelector('.contact-me').scrollIntoView({ behavior: 'smooth' });">Get in Touch</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  
+  
+
 
         <!-- about section -->
-        <div class="section">
-            <img src="images/kohde-pitcher.jpg" class="me">
-            <h1>Kohde Pitcher</h1>
-            <h2>Graduate Software Developer</h2>
-            <p style="padding-top: 1em;">Passionate and dedicated developer with a focus on web and mobile experiences.</p>
-      
-            <!-- <a href="https://twitter.com/jsngr" class="link">Twitter -></a><a href="https://ibuildmyideas.substack.com" class="link">Newsletter -></a> -->
+        <div class="header-section">
+          <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-lg-6">
+                <img src="images/kohde-pitcher.jpeg" class="d-block mx-lg-auto img-fluid" alt="Kohde Pitcher" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-white lh-1 mb-3 lh-sm" style="font-size: 56px;">Hello, my name is Kohde 👋</h1>
+                <p class="lead text-white lh-base" style="font-size: 24px;">I'm an passionate indie developer coding ideas in my free time. Scroll down to see what I've been up to.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" onclick="document.querySelector('.my-projects').scrollIntoView({ behavior: 'smooth' });">My Projects</button>
+                </div>
+              </div>
+            </div>
           </div>
+      </div>
+
+        <div class="wrapper">
 
         <!-- current work section -->
         <div class="section">
@@ -34,11 +284,16 @@
 
             <ul>
                 <li>
-                  <h3><a href="https://www.centacarecq.com/rockhampton/?gclid=CjwKCAjwqvyFBhB7EiwAER786TI3SriZddFT3FN_bDeyXPFg86sJyUaWdcqel3iE16CqRlZ58Xg55hoCUyEQAvD_BwE">CentacareCQ</a></h3>
-                  <p>Database Cadet (2021 - Present)</p>
+                  <h3><a href="https://catholiccarecq.com">CatholicCare Central Queensland</a></h3>
+                  <p>Integrations and Applications Developer (2021 - Present)</p>
                 </li>
 
                 <li>
+                  <h3>Indie Development</a></h3>
+                  <p>Developing my ideas (2020 - Present)</p>
+                </li>
+
+                <!-- <li>
                   <h3><a href="https://www.facebook.com/Rockyjockeyclub">Rockhampton Jockey Club</a></h3>
                   <p>Assistant Judge (2017 - Present)</p>
                 </li>
@@ -46,12 +301,12 @@
                 <li>
                     <h3><a href="https://www.facebook.com/profile.php?id=100057529865731">Rockhampton Greyhound Racing Club</a></h3>
                     <p>Judge (2019 - Present)</p>
-                  </li>
+                  </li> -->
               </ul>
         </div>
 
         <!-- projects -->
-        <div class="section">
+        <div class="section my-projects" id="my-projects">
             <h6>My Projects</h6>
 
             <ul class="collection-cards">
@@ -87,7 +342,7 @@
                     <div id="collection-hero">
                       <div class="collection-hero-inner" style="background-color: rgb(247, 198, 169); background-image: url(images/projects/Decider/Roulette_Wheel_Screen.png);background-size: 20em;">
                         <div class="collection-hero-left">
-                          <h1 class="collection-title">Decision Wheel (WIP)</h1>
+                          <h1 class="collection-title">Decider (WIP)</h1>
                           <h2 class="collection-title">Customisable decsion maker, just spin and let it decide for you</h2>
                           <h2 class="collection-title">Supports multiple wheels with different options, and disabling segments so that they dont get picked again</h2>
                           <div class="bundle">
@@ -143,7 +398,8 @@
 
         <!-- open source projects -->
         <div class="section">
-            <h6>My Open Source Work</h6>
+            <h6 style="margin-bottom: 12px;">My Open Source Work</h6>
+            <p style="margin-bottom: 12px;">You can see more of my work on <a href="https://github.com/Kohdepitcher" class="link">Github -></a></p>
 
             <ul class="collection-cards">
 
@@ -208,19 +464,54 @@
             </ul>
         </div>
 
-        <!-- more -->
-        <div class="section">
-            <h6>More Information</h6>
+        <!-- contact me -->
+        <div class="section contact-me">
+            <h6 style="margin-bottom: 12px;">Contact Me</h6>
+            <p style="margin-bottom: 12px;">Send me a message and I'll respond when I can</p>
 
-            <ul class="link-list">
-                <li class="link-list-item"><a href="mailto:kohdepitcher@hotmail.com" class="link">Email Me -></a></li>
-                <li class="link-list-item"><a href="https://github.com/Kohdepitcher" class="link">My GitHub -></a></li>
-            </ul>
+            <div class="bg-light mt-4">
+              <form action="https://formspree.io/f/xqkvqyvv" method="POST" class="p-4">
+
+                <div class="form-group">
+                  <label class="mb-1">Email</label>
+                  <input type="email" name="email" class="form-control form-control-lg" placeholder="name@example.com" required>
+                </div>
+                
+                <div class="form-group  mt-3">
+                  <label class="mb-1">Message</label>
+                  <textarea name="message" class="form-control form-control-lg" rows="4" placeholder="Friendly message here" required></textarea>
+                </div>
+
+                
+                
+                <button type="submit" class="btn btn-primary mt-3">
+                  <Span>Send <i class="bi bi-send-fill ms-" aria-hidden="true"></i></Span>
+                </button>
+            </form>
+          </div>
 
         </div>
 
     </div>
 
+    <!-- footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top" style="background-color: rgb(235, 235, 235);">
+      <div class="col-md-4 d-flex align-items-center ms-4">
+        <span class="mb-3 mb-md-0 text-muted">© 2023 Kohde Pitcher</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-4" style="font-size: 2em;">
+        <li class="ms-3"><a class="text btn-primary" href="https://github.com/Kohdepitcher"><i class="bi bi-github"></i></a></li>
+        <li class="ms-3"><a class="text btn-primary" href="https://twitter.com/KohdeP"><i class="bi bi-twitter"></i></a></li>
+        <li class="ms-3"><a class="text btn-primary" href="https://linkedin.com/in/kohdepitcherkelly"><i class="bi bi-linkedin"></i></a></li>
+      </ul>
+
+    </footer>
+
+    <script>
+
+    </script>
   <script src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
