@@ -1,0 +1,107 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+/* body {
+  padding-top: 56px;
+} */
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+.nav-scroller .nav {
+  color: rgba(255, 255, 255, .75);
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #6c757d;
+}
+
+.nav-scroller .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-scroller .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+/* @media (min-width: 768px) { */
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    /* 
+    
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+
+        <a class="navbar-brand abs" href="#">Kohde Pitcher</a>
+        <button class="navbar-toggler ms-auto" type="button" id="navbarSideCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse offcanvas-collapse" id="collapseNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="//codeply.com">Codeply</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#myAlert" data-bs-toggle="collapse">Link</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="" data-bs-target="#myModal" data-bs-toggle="modal">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    */
+
+/* Media query to move the brand element to the middle of the navbar when the viewport is wide enough */
+@media (min-width: 768px) {
+  .navbar-brand.abs
+      {
+          position: absolute;
+          width: auto;
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+      }
+  }
