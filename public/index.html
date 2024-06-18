@@ -30,7 +30,14 @@
         }
     }
 
+    .card {
+      transition: all 0.25s ease;
+    }
 
+    .card:hover{
+      transform:scale(1.1);
+      z-index: 10;
+    }
 
   </style>
 
@@ -100,7 +107,22 @@
         <div class="section my-projects" id="my-projects">
             <h6>My Projects</h6>
 
-            <!-- Races count down card -->
+            <!-- Perfect cirlce card -->
+            <a href="pages/perfect_circle.html">
+              <div class="card mb-3" style="background-color: #1e1e1e; border-radius: 30px; border-width: 2px; border-style: solid; overflow: hidden;">
+                <div class="card-body" style="margin: 2em;">
+                  <img src="images/perfect_circle/perfect_circle_app_icon.png" alt="" height="128" width="128" class="mb-3 mx-auto d-block" style="width: 75px; height: auto;">
+                  <div class="text-center">
+                    <h1 class="card-title text-white fw-bold" style="margin: 0;">Perfect Circle</h1>
+                    <p class="text-white mt-1" style="margin: 0;">Can you draw a perfect cirlce?</p>
+                  </div>
+                  <img src="images/perfect_circle/Perfect_Circle_Website_Hero.png" sizes="calc(100vw-60px)" alt="" class="img-fluid mx-auto d-block" style="width: 100vw-60px; height: auto; margin-top: 2em;">
+                </div>
+                
+              </div>
+            </a>
+
+            <!-- Decider card -->
             <div class="card mb-3" style="background-color: #0078fb; border-radius: 30px; border-width: 2px; border-style: solid; overflow: hidden;">
               <div class="row no-gutters">
                 <div class="col-lg-5" style="display: flex; align-items: center;">
