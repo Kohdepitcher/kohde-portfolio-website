@@ -124,12 +124,18 @@
     margin-bottom: 16px;
   }
 
+  .header-section img {
+    max-width: 75%;
+  }
+
 /* Media Quries */
 @media only screen and (min-width: 600px) {
 
     .header-section-container {
         flex-direction: row-reverse;
     }
+
+    
 
     .left-side {
         /* max-width: 0%;  */

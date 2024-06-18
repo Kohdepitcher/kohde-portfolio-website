@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/styles.css?v=1.0">
   <link rel="stylesheet" href="styles/collection-cards.css">
   <link rel="stylesheet" href="styles/home-page.css">
+  <link rel="stylesheet" href="styles/nav-bar-styles.css">
 
   <style>
 
@@ -29,6 +30,8 @@
         }
     }
 
+
+
   </style>
 
 </head>
@@ -36,45 +39,43 @@
 <body>
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(22, 22, 22)">
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark navbar" style="background-color: rgb(22, 22, 22); border-bottom: 1px solid color(srgb 0.18 0.18 0.18)">
     <div class="container-fluid">
-        <a class="navbar-brand abs" href="#"><h2>Kohde Pitcher</h2></a>
+        <a class="text-white" style="text-decoration: none;" href="index.html"><h2 style="margin-bottom: 0.5em; margin-top: 0.5em;" >Kohde Pitcher</h2></a>
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="collapseNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/resume.html">Resume</a>
-                </li>
-            </ul>
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <button type="button" class="btn nav-link" onclick="document.querySelector('.contact-me').scrollIntoView({ behavior: 'smooth' });">Get in Touch</button>
-                </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link active nav-link-active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="pages/resume.html">Resume</a>
+              </li> -->
+              <li class="nav-item">
+                <button type="button" class="btn nav-link" onclick="document.querySelector('.contact-me').scrollIntoView({ behavior: 'smooth' });">Get in Touch</button>
+              </li>
             </ul>
         </div>
     </div>
-</nav>
+  </nav>
   
   
 
 
         <!-- about section -->
-        <div class="header-section">
+        <div class="header-section" style="margin-top: 3em;">
           <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
               <div class="col-lg-6">
-                <img src="images/kohde-pitcher.jpeg" class="d-block mx-lg-auto img-fluid" alt="Kohde Pitcher" width="700" height="500" loading="lazy">
+                <img src="images/kohde-pitcher.jpeg" class="d-block mx-lg-auto img-fluid" style="border-radius: 30px;" alt="Kohde Pitcher" width="700" height="500" loading="lazy">
               </div>
               <div class="col-lg-6">
                 <h1 class="display-5 fw-bold text-white lh-1 mb-3 lh-sm" style="font-size: 56px;">Hello, my name is Kohde <span class="wave">👋</span></h1>
                 <p class="lead text-white lh-base" style="font-size: 24px;">I'm an passionate indie developer coding ideas in my free time. Scroll down to see what I've been up to.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" onclick="document.querySelector('.my-projects').scrollIntoView({ behavior: 'smooth' });">My Projects</button>
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick="document.querySelector('.my-projects').scrollIntoView({ behavior: 'smooth' });">My Projects</button>
                 </div>
               </div>
             </div>
@@ -89,13 +90,8 @@
 
             <ul>
                 <li>
-                  <h3><a href="https://catholiccarecq.com">CatholicCare Central Queensland</a></h3>
-                  <p>Integrations and Applications Developer (2021 - Present)</p>
-                </li>
-
-                <li>
-                  <h3>Indie Development</a></h3>
-                  <p>Developing my ideas (2020 - Present)</p>
+                  <h3><a href="https://zencontrol.com">zencontrol</a></h3>
+                  <p>Software Engineer (2024 - Present)</p>
                 </li>
               </ul>
         </div>

@@ -12,8 +12,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-  <link rel="stylesheet" href="/styles/styles.css?v=1.0">
-  <link rel="stylesheet" href="/styles/home-page.css">
+  <link rel="stylesheet" href="../styles/styles.css?v=1.0">
+  <link rel="stylesheet" href="../styles/home-page.css">
+  <link rel="stylesheet" href="styles/nav-bar-styles.css">
 
   <style>
 
@@ -35,32 +36,25 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(22, 22, 22)">
-        <div class="container-fluid">
-            <a class="navbar-brand abs" href="/index.html"><h2>Kohde Pitcher</h2></a>
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="collapseNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Home</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Resume</a>
-                    </li>
-                </ul>
-                <!-- <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                      <button type="button" class="btn nav-link" onclick="document.querySelector('.contact-me').scrollIntoView({ behavior: 'smooth' });">Get in Touch</button>
-                    </li>
-                </ul> -->
-            </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark navbar" style="background-color: rgb(22, 22, 22); border-bottom: 1px solid color(srgb 0.18 0.18 0.18)">
+    <div class="container-fluid">
+        <a class="text-white" style="text-decoration: none;" href="index.html"><h2 style="margin-bottom: 0.5em; margin-top: 0.5em;" >Kohde Pitcher</h2></a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapseNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active nav-link-active" href="#">Resume</a>
+              </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+  </nav>
   
 
 
