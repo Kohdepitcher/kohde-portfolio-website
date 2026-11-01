@@ -1,270 +1,169 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>Kohde Pitcher</title>
-  <meta name="description" content="Kohde Pitcher">
-  <meta name="author" content="Kohde Pitcher">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kohde Pitcher — Software Engineer</title>
+  <meta name="description" content="Kohde Pitcher is a software engineer and indie iOS developer building apps with Swift and SwiftUI.">
+  <meta name="author" content="Kohde Pitcher">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-  <link rel="stylesheet" href="styles/styles.css?v=1.0">
-  <link rel="stylesheet" href="styles/collection-cards.css">
-  <link rel="stylesheet" href="styles/home-page.css">
-  <link rel="stylesheet" href="styles/nav-bar-styles.css">
-
-  <style>
-
-    @media (min-width: 768px) {
-    .navbar-brand.abs
-        {
-            position: absolute;
-            width: auto;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-        }
-    }
-
-    .card {
-      transition: all 0.25s ease;
-    }
-
-    /* .card:hover{
-      transform:scale(1.1);
-      z-index: 10;
-    } */
-
-  </style>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles/site.css">
 </head>
 
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar fixed-top navbar-expand-md navbar-dark navbar" style="background-color: rgb(22, 22, 22); border-bottom: 1px solid color(srgb 0.18 0.18 0.18)">
-    <div class="container-fluid">
-        <a class="text-white" style="text-decoration: none;" href="index.html"><h2 style="margin-bottom: 0.5em; margin-top: 0.5em;" >Kohde Pitcher</h2></a>
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="collapseNavbar">
-            <ul class="navbar-nav ms-auto">
-              <!-- <li class="nav-item">
-                <a class="nav-link active nav-link-active" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="pages/resume.html">Resume</a>
-              </li> -->
-              <li class="nav-item">
-                <button type="button" class="btn nav-link" onclick="document.querySelector('.contact-me').scrollIntoView({ behavior: 'smooth' });">Get in Touch</button>
-              </li>
-            </ul>
-        </div>
-    </div>
+  <!-- Floating nav -->
+  <nav class="dock" aria-label="Sections">
+    <a href="#home" aria-label="Home" data-label="Home"><i class="bi bi-house"></i></a>
+    <a href="#projects" aria-label="Projects" data-label="Projects"><i class="bi bi-folder2"></i></a>
+    <a href="#experience" aria-label="Experience" data-label="Experience"><i class="bi bi-briefcase"></i></a>
+    <a href="#contact" aria-label="Contact" data-label="Contact"><i class="bi bi-pencil-square"></i></a>
   </nav>
-  
-  
 
+  <div class="layout">
 
-        <!-- about section -->
-        <div class="header-section" style="margin-top: 3em;">
-          <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              <div class="col-lg-6">
-                <img src="images/kohde-pitcher.jpeg" class="d-block mx-lg-auto img-fluid" style="border-radius: 30px;" alt="Kohde Pitcher" width="700" height="500" loading="lazy">
-              </div>
-              <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-white lh-1 mb-3 lh-sm" style="font-size: 56px;">Hello, my name is Kohde <span class="wave">👋</span></h1>
-                <p class="lead text-white lh-base" style="font-size: 24px;">I'm an passionate indie developer coding ideas in my free time. Scroll down to see what I've been up to.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick="document.querySelector('.my-projects').scrollIntoView({ behavior: 'smooth' });">My Projects</button>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- Header: about me + photo -->
+    <header id="home" class="hero">
+      <div class="hero-text">
+        <p class="hero-hello">Hi, I'm Kohde Pitcher 👋</p>
+        <h1 class="display">Software <span>Engineer</span></h1>
+        <p class="lead">I'm a passionate developer coding ideas in my free time. Scroll down to see what I've been up to.</p>
+        <div class="hero-links">
+          <a class="button button--primary" href="https://linkedin.com/in/kohdepitcherkelly"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          <a class="button" href="https://github.com/Kohdepitcher"><i class="bi bi-github"></i> GitHub</a>
+        </div>
       </div>
 
-        <div class="wrapper">
+      <div class="hero-photo">
+        <img src="images/kohde-pitcher.jpeg" alt="Kohde Pitcher" width="1533" height="1496">
+      </div>
+    </header>
 
-        <!-- current work section -->
-        <div class="section">
-            <h6>Currently Working At</h6>
+    <main class="content">
 
-            <ul>
-                <li>
-                  <h3><a href="https://zencontrol.com">zencontrol</a></h3>
-                  <p>Software Engineer (2024 - Present)</p>
-                </li>
-              </ul>
-        </div>
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <h2 class="display reveal">Recent <span>Projects</span></h2>
 
-        <!-- projects -->
-        <div class="section my-projects" id="my-projects">
-            <h6>My Projects</h6>
-
-            <!-- Perfect cirlce card -->
-            <a href="pages/perfect_circle.html">
-              <div class="card mb-3" style="background-color: #1e1e1e; border-radius: 30px; border-width: 2px; border-style: solid; overflow: hidden;">
-                <div class="card-body" style="margin: 2em;">
-                  <img src="images/perfect_circle/perfect_circle_app_icon.png" alt="" height="128" width="128" class="mb-3 mx-auto d-block" style="width: 75px; height: auto;">
-                  <div class="text-center">
-                    <h1 class="card-title text-white fw-bold" style="margin: 0;">Perfect Circle</h1>
-                    <p class="text-white mt-1" style="margin: 0;">Can you draw a perfect cirlce?</p>
-                  </div>
-                  <img src="images/perfect_circle/Perfect_Circle_Website_Hero.png" sizes="calc(100vw-60px)" alt="" class="img-fluid mx-auto d-block" style="width: 100vw-60px; height: auto; margin-top: 2em;">
-                </div>
-                
+        <ul class="rows">
+          <li class="reveal">
+            <a class="row" href="https://kotlin-tree-viewer.kohdepitcher.com">
+              <img src="images/projects/Kotlin_Tree_Viewer/Kotlin_Tree_Viewer_App_Icon.svg" alt="" class="row-thumb">
+              <div class="row-text">
+                <h3>Kotlin Tree Viewer</h3>
+                <p>Web app that renders Kotlin toStrings as explorable tree structures</p>
               </div>
+              <i class="bi bi-box-arrow-up-right"></i>
             </a>
-
-            <!-- Decider card -->
-            <div class="card mb-3" style="background-color: #0078fb; border-radius: 30px; border-width: 2px; border-style: solid; overflow: hidden;">
-              <div class="row no-gutters">
-                <div class="col-lg-5" style="display: flex; align-items: center;">
-                  <img src="images/projects/Decider/Decider_home_page_hero.png" class="card-img" alt="..." style="object-fit: cover; height: 100%; border-radius: 0;">
-                </div>
-                <div class="col-md-7">
-                  <div class="card-body" style="margin: 2em;">
-                    <img src="images/projects/Decider/Decider_app_icon.png" height="128" width="128" class="mb-3" style="border-style: solid; border-radius: 40px; border-width: 2px; border-color: color(srgb 0.0196 0.4 0.8158);">
-                    <h1 class="card-title text-white">Decider</h1>
-                    <p class="card-text text-white mt-3">Decider comes with a bunch of wheels built in or you can easily make your own. Want to change the probability? We got that too!</p>
-                    <p class="card-text text-white mt-3">Want to give your wheels some style? Then pick from some of our themes built in or make your own.</p>
-                    <p class="card-text text-white mt-3">All data is stored entirely within your personal iCloud, and synced with all devices so you can spin wheels anywhere any time.</p>
-                    <a href="" class="btn btn-lg btn-light text-black mt-3 disabled"><i class="bi bi-apple me-2"></i>Coming Soon</a>
-                  </div>
-                </div>
+          </li>
+          <li class="reveal">
+            <div class="row">
+              <img src="images/perfect_circle/perfect_circle_app_icon.png" alt="" class="row-thumb">
+              <div class="row-text">
+                <h3>Perfect Circle</h3>
+                <p>Can you draw a perfect circle? A SwiftUI take on the popular drawing game</p>
               </div>
             </div>
-
-            <!-- Convertio card -->
-            <div class="card mb-3" style="background-color: #f5096e; border-radius: 30px; border-width: 2px; border-style: solid; overflow: hidden;">
-              <div class="row no-gutters">
-                <div class="col-lg-5" style="display: flex; align-items: center;">
-                  <img src="images/projects/Convertio/Convertio_home_page.png" class="card-img" alt="..." style="object-fit: cover; height: 100%; border-radius: 0;">
-                </div>
-                <div class="col-md-7">
-                  <div class="card-body" style="margin: 2em;">
-                    <h1 class="card-title text-white">Convertio</h1>
-                    <p class="card-text text-white mt-3">Easy to use and customisable unit converter</p>
-                    <a href="" class="btn btn-lg btn-light text-black mt-3 disabled"><i class="bi bi-apple me-2"></i>Coming Soon</a>
-                  </div>
-                </div>
+          </li>
+          <li class="reveal">
+            <div class="row">
+              <img src="images/projects/Decider/Decider_app_icon.png" alt="" class="row-thumb">
+              <div class="row-text">
+                <h3>Decider <span class="tag">Coming soon</span></h3>
+                <p>Spin built-in or custom wheels with adjustable odds and themes, synced through iCloud</p>
               </div>
             </div>
-
-            <!-- Races count down card -->
-            <div class="card mb-3" style="background-color: #9b1fe8; border-radius: 30px; border-width: 2px; border-style: solid; overflow: hidden;">
-              <div class="row no-gutters">
-                <div class="col-lg-5" style="display: flex; align-items: center;">
-                  <img src="images/projects/Races_Count_Down/Races_Count_Down_Home_Page_Image.png" class="card-img" alt="..." style="object-fit: cover; height: 100%; border-radius: 0;">
-                </div>
-                <div class="col-md-7">
-                  <div class="card-body" style="margin: 2em;">
-                    <img src="images/projects/Races_Count_Down/Races_Count_Down_App_Icon.png" height="128" width="128" class="mb-3">
-                    <h1 class="card-title text-white">Races Count Down</h1>
-                    <p class="card-text text-white mt-3">Built as tool to make my life a bit easier in a previous career. It became a little annoying trying to check when the next thoroughbred race was starting especially when working in an area with low cellular reception. I instead built an app that let me look at the upcoming meetings and then save a list of races to then see a count down to each single race.</p>
-                    <a href="https://github.com/Kohdepitcher/RacesListCountDown" class="btn btn-lg btn-dark text-white mt-3"><i class="bi bi-github me-2"></i>View on Github</a>
-                  </div>
-                </div>
+          </li>
+          <li class="reveal">
+            <div class="row">
+              <img src="images/projects/Convertio/Convertio_home_page.png" alt="" class="row-thumb">
+              <div class="row-text">
+                <h3>Convertio <span class="tag">Coming soon</span></h3>
+                <p>An easy-to-use, customisable unit converter.</p>
               </div>
             </div>
-
-
-
-            
-
-
-        </div>
-
-        <!-- open source projects -->
-        <div class="section">
-            <h6 style="margin-bottom: 12px;">My Open Source Work</h6>
-
-            <!-- Github card -->
-            <div class="card mb-3" style="background-color: #000000; border-radius: 30px; border-width: 2px; border-style: solid; overflow: hidden;">
-              <div class="row no-gutters">
-                <div class="col-md-12">
-                  <div class="card-body" style="margin: 2em;">
-                    <h2 class="card-title text-white">You can see more of my work on Github</h2>
-                    <a href="https://github.com/Kohdepitcher" class="btn btn-lg btn-light text-black mt-3"><i class="bi bi-github me-2"></i>View My Profile</a>
-                  </div>
-                </div>
+          </li>
+          <li class="reveal">
+            <a class="row" href="https://github.com/Kohdepitcher/RacesListCountDown">
+              <img src="images/projects/Races_Count_Down/Races_Count_Down_App_Icon.png" alt="" class="row-thumb">
+              <div class="row-text">
+                <h3>Races Count Down</h3>
+                <p>Save upcoming thoroughbred races and get a live countdown to each start, even with poor reception</p>
               </div>
-            </div>
-
-            <!-- KPPicker card -->
-            <div class="card mb-3" style="background-color: #007aff; border-radius: 30px; border-width: 2px; border-style: solid; overflow: hidden;">
-              <div class="row no-gutters">
-                <div class="col-lg-5" style="display: flex; align-items: center;">
-                  <img src="images/open_source_projects/KPPicker.gif" class="card-img" alt="..." style="object-fit: cover; height: 100%; border-radius: 0;">
-                </div>
-                <div class="col-md-7">
-                  <div class="card-body" style="margin: 2em;">
-                    <h1 class="card-title text-white">KPPicker</h1>
-                    <p class="card-text text-white mt-3">
-                      Easy to use horizontal picker that mimics the look and feel of Apple's catergory picker in their Memoji builder screen. Allows for easy customisation of the look and functionality as well as customising each individual label shown in the picker.
-                    </p>
-                    <a href="https://github.com/Kohdepitcher/KPPicker" class="btn btn-lg btn-dark text-white mt-3"><i class="bi bi-github me-2"></i>View on Github</a>
-                  </div>
-                </div>
+              <i class="bi bi-github row-arrow"></i>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="row" href="https://github.com/Kohdepitcher/KPPicker">
+              <img src="images/open_source_projects/KPPicker.gif" alt="" class="row-thumb" loading="lazy">
+              <div class="row-text">
+                <h3>KPPicker <span class="tag">Open source</span></h3>
+                <p>A customisable horizontal picker inspired by the category picker in Apple's Memoji builder</p>
               </div>
-            </div>
-            
-        </div>
+              <i class="bi bi-github row-arrow"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-        <!-- contact me -->
-        <div class="section contact-me">
-            <h6 style="margin-bottom: 12px;">Contact Me</h6>
-            <p style="margin-bottom: 12px;">Send me a message and I'll respond when I can</p>
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <h2 class="display reveal">Work <span>Experience</span></h2>
 
-            <div class="bg-light mt-4">
-              <form action="https://formspree.io/f/xqkvqyvv" method="POST" class="p-4">
+        <ol class="timeline">
+          <li class="reveal">
+            <h3>zencontrol</h3>
+            <p class="role">Software Engineer</p>
+            <p>Utilising Kotlin Multiplatform and Compose Multiplatform to modernise legacy Android applications to newer cross-platform experiences</p>
+            <p class="date">2024 – Present</p>
+          </li>
+          <li class="reveal">
+            <h3>CatholicCare Central Queensland</h3>
+            <p class="role">Integrations &amp; Applications Developer</p>
+            <p>Built automations linking in-house and off-the-shelf systems, and developed internal tools to improve business efficiency</p>
+            <p class="date">2023 – 2024</p>
+          </li>
+          <li class="reveal">
+            <h3>CatholicCare Central Queensland</h3>
+            <p class="role">Technology Officer</p>
+            <p>Provided technical support to staff</p>
+            <p class="date">2021 – 2023</p>
+          </li>
+          <li class="reveal">
+            <h3>CQUniversity</h3>
+            <p class="role">Bachelor of Information Technology, Application Development</p>
+            <p class="date">Graduated 2020</p>
+          </li>
+        </ol>
+      </section>
 
-                <div class="form-group">
-                  <label class="mb-1">Email</label>
-                  <input type="email" name="email" class="form-control form-control-lg" placeholder="name@example.com" required>
-                </div>
-                
-                <div class="form-group  mt-3">
-                  <label class="mb-1">Message</label>
-                  <textarea name="message" class="form-control form-control-lg" rows="4" placeholder="Friendly message here" required></textarea>
-                </div>
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h2 class="display reveal">Let's <span>Talk</span></h2>
+        <p class="lead reveal">Send me a message and I'll get back to you when I can.</p>
 
-                
-                
-                <button type="submit" class="btn btn-primary mt-3">
-                  <Span>Send <i class="bi bi-send-fill ms-" aria-hidden="true"></i></Span>
-                </button>
-            </form>
+        <form class="contact-form reveal" action="https://formspree.io/f/xqkvqyvv" method="POST">
+          <div class="field-row">
+            <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+            <label>Email<input type="email" name="email" placeholder="name@example.com" required></label>
           </div>
+          <label>Message<textarea name="message" rows="5" placeholder="Friendly message here" required></textarea></label>
+          <button type="submit">Send message <i class="bi bi-send-fill"></i></button>
+        </form>
+      </section>
 
-        </div>
+      <footer class="footer">
+        <span>© <span id="year">2026</span> Kohde Pitcher</span>
+        <a href="#home">Back to top</a>
+      </footer>
 
-    </div>
+    </main>
+  </div>
 
-    <!-- footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top" style="background-color: rgb(235, 235, 235);">
-      <div class="col-md-4 d-flex align-items-center ms-4">
-        <span class="mb-3 mb-md-0 text-muted">© 2023 Kohde Pitcher</span>
-      </div>
-  
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-4" style="font-size: 2em;">
-        <li class="ms-3"><a class="text btn-primary" href="https://github.com/Kohdepitcher"><i class="bi bi-github"></i></a></li>
-        <li class="ms-3"><a class="text btn-primary" href="https://twitter.com/KohdeP"><i class="bi bi-twitter"></i></a></li>
-        <li class="ms-3"><a class="text btn-primary" href="https://linkedin.com/in/kohdepitcherkelly"><i class="bi bi-linkedin"></i></a></li>
-      </ul>
-
-    </footer>
-
-    <script>
-
-    </script>
-  <script src="scripts.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="scripts/site.js"></script>
 </body>
 </html>
